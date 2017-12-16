@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Crypto3</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="light-blue" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Crypto3</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Sign Up</a></li>
+        <li><a href="markets.html">Market</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Random Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <br><br>
+    <!-- Current Trains-->
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Current Market</strong></h3>
+      </div>
+      <div class="panel-body">
+        <table class="table table-hover" id='market-table'>
+          <thead>
+            <tr>
+              <th>Currency Name</th>
+              <th>Currency Symbol</th>
+              <th>Current Price (USD)</th>
+              <th>% Change (last 24 hrs)</th>
+              <th>Market Cap (USD)</th>
+              <th>Last Updated</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!--  Scripts-->
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="app.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="refresh" content="120">
+  <title>Crypto3</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+	<nav class="light-blue" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Crypto3</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="SignUp.html">Sign Up</a></li>
+        <li><a href="markets.html">Market</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Random Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+	<div class="container">
+		<form class="form-signin" style="max-width: 330px; margin: 0 auto">
+			<h2 class="form-signin-heading">Please sign in</h2><br>
+			<label for="inputEmail" class="sr-only">Email address</label>
+			<input id="inputEmail" class="form-control" type="email" placeholder="Email address"><br>
+
+			<label for="inputPassword" class="sr-only">Password</label>
+			<input id="inputPassword" class="form-control" type="password" placeholder="Password"><br>
+		</form>
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<button id="btnsignin" class="btn btn-lg btn-primary" type="submit"> Sign in</button>
+				<button id="btnsignup" class="btn btn-lg btn-primary " type="submit"> Sign up</button>
+				<button id="btnlogout" class="btn btn-lg btn-primary" type="submit"> Log out</button>
+			</div>
+		</div>
+	</div>
+
+<script src="SignUpApp.js"></script>
+</body>
+</html>

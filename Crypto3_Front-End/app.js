@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	//AJAX call to coinmarketcap.com
-	var queryURL = "https://api.coinmarketcap.com/v1/ticker/"
+	var queryURL = "https://api.coinmarketcap.com/v1/ticker/?limit=10"
 
 	$.ajax({
 		url: queryURL,
@@ -22,12 +22,23 @@ $(document).ready(function(){
 			$("#market-table").append("<tr><td>" + 
 				results[i].id.charAt(0).toUpperCase() + results[i].id.slice(1)+ "</td><td>" + 
 				results[i].symbol + "</td><td>" + 
-				"$" + results[i].price_usd + "</td><td>" +
+				"$" + results[i].price_usd + "</td><td id='updown"+i+"'>" +
 				results[i].percent_change_24h + "</td><td>" +
 				"$" + results[i].market_cap_usd + "</td><td>" +
-				format + "</td><td>");
-	}
+				format + "</td><td>" +
+				'<button id="buy">Buy</button></td>' +
+				'<td><button id="sell">Sell</button></td>');
 
+			if (results[i].percent_change_24h < 0) {
+				$("#updown"+i).prepend("<span class='glyphicon glyphicon-triangle-bottom' aria-hidden='true'></span>" + " ");
+				$("#updown" + i).css({color: 'red'});
+			} else {
+				$("#updown"+i).prepend("<span class='glyphicon glyphicon-triangle-top' aria-hidden='true'></span>" + " ");
+				$("#updown"+i).css({color: 'green'});
+			}
+
+		}
+		
 	})
 })
 

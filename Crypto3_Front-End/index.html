@@ -11,15 +11,17 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
 </head>
 <body>
   <nav class="light-blue" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">Crypto3</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="idex.html">Home</a></li>
-        <li><a href="#">Sign Up</a></li>
-        <li><a href="markets.html">Market</a></li>
+        <li><a id="navhome" href="index.html">Home</a></li>
+        <li><a id="navmarket" href="markets.html">Market</a></li>
+        <li><a id="btnlogout" type="submit"> Log out</a></li>
+
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -91,8 +93,22 @@
         <div class="row center">
           <h5 class="header col s12 light">Building a Better Crypto Community</h5>
         </div>
-        <input id="mainEmail" type="text" class="button-fab button-white ripple has-ripple" placeholder="Enter Your E-mail Address" name="f312ee3b63be1a5aa1db80fe0d7dcad8">
-          <button id="startTrial" class="mtr-btn button-navy ripple has-ripple">Start my free trial now</button>
+        
+        <form class="form-signin" style="max-width: 330px; margin: 0 auto">
+          <h3 class="form-signin-heading text-center">Please sign in</h2><br>
+          <label for="inputEmail" class="sr-only">Email address</label>
+          <input id="inputEmail" class="form-control" type="email" placeholder="Email address" style="font-color: white"><br>
+
+          <label for="inputPassword" class="sr-only">Password</label>
+          <input id="inputPassword" class="form-control" type="password" placeholder="Password"><br>
+        </form>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <button id="btnsignin" class="btn btn-lg btn-primary" type="submit"> Sign in</button>
+            <button id="btnsignup" class="btn btn-lg btn-primary " type="submit"> Sign up</button>
+          </div>
+        </div>
+      
       </div>
     </div>
     <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
@@ -130,9 +146,11 @@
   <!--  Scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script src="app.js"></script>
+    <script src="SignUpApp.js"></script>
 
   </body>
 </html>

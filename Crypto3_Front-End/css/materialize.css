@@ -3,6 +3,29 @@
  * Copyright 2014-2017 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+
+#navhome, 
+#navmarket, 
+#navsignup,
+#download-button,
+#btnlogout,
+#logo-container {
+  text-decoration: none;
+}
+
+#buy{
+  background-color:green;
+  color: white;
+}
+
+#sell{
+  background-color:red;
+  color: white;
+}
+
+.form-control {
+  color:white;
+ }
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -40,7 +63,7 @@
 }
 
 .materialize-red-text.text-lighten-2 {
-  color: #ee6e73 !important;
+  color: white;
 }
 
 .materialize-red.lighten-1 {
@@ -984,7 +1007,7 @@
 }
 
 .teal-text {
-  color: #009688 !important;
+  color: white !important;
 }
 
 .teal.lighten-5 {
@@ -1016,7 +1039,7 @@
 }
 
 .teal-text.text-lighten-2 {
-  color: #4db6ac !important;
+  color: white !important;
 }
 
 .teal.lighten-1 {
@@ -2183,6 +2206,7 @@ nav,
 section,
 summary {
   display: block;
+  text-decoration: none;
 }
 
 /**
@@ -4483,6 +4507,7 @@ html {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   line-height: 1.1;
+  font-color: white;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -8309,10 +8334,19 @@ input[type=range]:focus::-ms-fill-upper {
   visibility: visible;
   -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
           animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-  -webkit-transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-  transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-  transition: opacity .3s, transform .3s, visibility 0s 1s;
-  transition: opacity .3s, transform .3s, visibility 0s 1s, -webkit-transform .3s;
+  -webkit-transition: opacity .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
 }
 
 .tap-target {
@@ -8365,10 +8399,19 @@ input[type=range]:focus::-ms-fill-upper {
 
 .tap-target-wave::after {
   visibility: hidden;
-  -webkit-transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-  transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-  transition: opacity .3s, transform .3s, visibility 0s;
-  transition: opacity .3s, transform .3s, visibility 0s, -webkit-transform .3s;
+  -webkit-transition: opacity .3s,
+ visibility 0s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ visibility 0s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s,
+ -webkit-transform .3s;
   z-index: -1;
 }
 

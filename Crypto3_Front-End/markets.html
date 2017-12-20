@@ -3,6 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="refresh" content="120">
   <title>Crypto3</title>
 
   <!-- CSS  -->
@@ -15,11 +16,11 @@
 <body>
   <nav class="light-blue" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Crypto3</a>
+      <a id="logo-container" href="index.html" class="brand-logo">Crypto3</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Sign Up</a></li>
-        <li><a href="markets.html">Market</a></li>
+        <li><a id="navhome" href="index.html">Home</a></li>
+        <li><a id="navmarket" href="markets.html">Market</a></li>
+        <li><a id="btnlogout" type="submit"> Log out</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -56,12 +57,14 @@
   </div>
 
   <!--  Scripts-->
-    <!--jQuery-->
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script src="app.js"></script>
+    <script src="SignUpApp.js"></script>
 
   </body>
 </html>

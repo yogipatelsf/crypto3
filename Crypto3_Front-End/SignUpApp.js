@@ -28,7 +28,6 @@
   	const email = txtEmail.val();
   	const pass =  txtPassword.val();
   	const auth = firebase.auth();
-
   	txtEmail.val('');
     txtPassword.val('');
 
@@ -37,6 +36,9 @@
  const promise = auth.signInWithEmailAndPassword(email, pass);
         
        promise
+          .then(function() {
+            window.location.href="markets.html"
+          })
        		.catch(e => {
        			alert(e.message);
        			console.log(e.message);
@@ -99,11 +101,3 @@
    }
 
   })
-
-
-
-
-
-
-
-

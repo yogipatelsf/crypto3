@@ -24,7 +24,7 @@ $(document).ready(function(){
 				results[i].symbol + "</td><td>" + 
 				"$" + results[i].price_usd + "</td><td id='updown"+i+"'>" +
 				results[i].percent_change_24h + "</td><td>" +
-				"$" + results[i].market_cap_usd + "</td><td>" +
+				"$" + results[i].market_cap_usd.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + "</td><td>" +
 				format + "</td><td>" +
 				'<button id="buy">Buy</button></td>' +
 				'<td><button id="sell">Sell</button></td>');

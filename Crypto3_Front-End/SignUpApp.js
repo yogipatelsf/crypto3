@@ -58,7 +58,11 @@
 //Sign up
  	const promise = auth.createUserWithEmailAndPassword(email, pass);
         
-       promise.catch(e => {
+       promise
+       .then(function() {
+            window.location.href="markets.html"
+          })
+       f.catch(e => {
        	alert(e.message);
        	console.log(e.message);
        	});

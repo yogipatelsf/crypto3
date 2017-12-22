@@ -69,23 +69,22 @@ class Blockchain{
 }
 
 
-let crypto3 = new Blockchain();
-//Display the Blockchain
-//mining the first block after the proof of work
-console.log('crypto3');
-console.log('Mining block 1..');
-crypto3.addBlock(new block(1, new Date() , { amount: 5, 
-											 email: "schguerfi@hotmail.com",
-											 coin: "CoinID",
-											 price: "actual price_usd",
-											 BuySell: "buy"}));
+// let crypto3 = new Blockchain();
+// //Display the Blockchain
+// //mining the first block after the proof of work
+// console.log('crypto3');
+// console.log('Mining block 1..');
+// crypto3.addBlock(new block(1, new Date() , { amount: 5, 
+// 											 email: "schguerfi@hotmail.com",
+// 											 coin: "CoinID",
+// 											}));
 
-console.log('Mining block 2..');
-crypto3.addBlock(new block(2,new Date() , { amount: 2}));
- console.log(crypto3);
+// console.log('Mining block 2..');
+// crypto3.addBlock(new block(2,new Date() , { amount: 2}));
+//  console.log(crypto3);
 
 // // Check if the chain is valid------ try to hack it!;)
 // crypto3.chain[1].data = { amount: 100}; 
 // crypto3.chain[1].hash = crypto3.chain[1].calculateHash();
-console.log('Is Blockchain Valid? '+ crypto3.isChainValid());
+
 

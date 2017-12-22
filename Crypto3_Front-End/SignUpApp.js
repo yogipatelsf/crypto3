@@ -31,6 +31,7 @@
 
   	txtEmail.val('');
     txtPassword.val('');
+   
 
   	
 //Sign in

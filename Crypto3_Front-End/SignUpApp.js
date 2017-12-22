@@ -30,6 +30,7 @@
   	const auth = firebase.auth();
   	txtEmail.val('');
     txtPassword.val('');
+   
 
   	
 //Sign in
